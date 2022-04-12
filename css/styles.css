@@ -1,0 +1,200 @@
+/* 
+1. posicionamiento
+2. Modelo caja(Box model)
+3. Tipografía
+4. Visuales
+5. Miselanius u otros
+*/
+
+:root {
+  /* colores */
+  --bitcoin-orange: #F7931A;
+  --linear-bg: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  --soft-orange: #FFE9D5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #282623;
+  --black: #201e1c;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: var(--off-white);
+}
+
+img {
+  vertical-align: middle;
+}
+
+picture {
+  display: block;
+}
+
+.container {
+  max-width: 916px;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+
+header {
+  position: relative;
+  padding: 2rem 0;
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+   margin: 2rem auto 3.6rem;
+  /*text-align: center; */
+}
+
+header h1, header p {
+  color: var(--just-white);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+
+header p {
+  margin: 2.4rem 0 4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
+}
+
+.header__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 219px;
+  left: calc(50% - 219px/2);
+  bottom: calc(2% - 50px/2);
+  padding: 1.6rem 1.6rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--black);
+  border-radius: .4rem;
+  background-color: var(--off-white);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  white-space: nowrap;
+}
+
+.header__button img {
+  margin-left: 1.4rem;
+}
+
+.exchange {
+  margin-top: 4rem;
+}
+
+
+/* .exchange .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+
+.exchange__img {
+  min-width: 192px;
+  max-width: 200px;
+  margin: 0 auto 4.4rem;
+}
+
+.exchange__img img {
+  width: 100%;
+}
+
+.exchange__description {
+  text-align: center;
+  /* width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto; */
+}
+
+.exchange__description h2 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  margin-bottom: 2.4rem;
+  color: var(--warm-black);
+}
+
+.exchange__description p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--grey);
+}
+
+.exchange__table {
+  margin-top: 4.8rem;
+}
+
+.exchange__table h3 {
+  width: 90%;
+  max-width: 197px;
+  margin: 0 auto 1.2rem;
+  padding-left: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--bitcoin-orange);
+}
+
+.exchange__table table {
+  width: 90%;
+  max-width: 197px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: var(--just-white);
+  border-radius: 8px;
+}
+
+.exchange__table table tr td {
+   border: 2px solid var(--off-white);
+   padding: 1rem 1.2rem;
+   font-family: 'Inter', sans-serif;
+  }
+  
+  .exchange__table table tr td img {
+    margin-left: 1rem;
+  }
+  
+  .exchange__table tr td:first-child {
+    border-left: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--grey);
+  }
+  
+  .exchange__table tr td:last-child {
+    border-right: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--warm-black);
+}
+
+.exchange__table table tr:first-child td {
+  border-top: none;
+}
+
+.exchange__table table tr:last-child td {
+  border-bottom: none;
+}
