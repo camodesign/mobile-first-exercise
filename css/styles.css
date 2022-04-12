@@ -198,3 +198,7 @@ header p {
 .exchange__table table tr:last-child td {
   border-bottom: none;
 }
+
+ .exchange__table:last-child h3 {
+  color: var(--secondary-blue);
+}
